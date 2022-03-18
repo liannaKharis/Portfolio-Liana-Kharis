@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100%;
+  background-color: #000000;
 }
 /* 1страница */
 #containerOne {
@@ -379,6 +381,10 @@ form {
 }
 
 @media all and (max-width: 1024px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
   .contactText {
     padding: 5px;
     margin: 5px;
@@ -458,6 +464,11 @@ form {
   
 }
 @media all and (max-width: 800px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  
   .family {
     font-size: 50px;
   }
