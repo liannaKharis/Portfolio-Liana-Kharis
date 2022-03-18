@@ -1,0 +1,651 @@
+body {
+  margin: 0;
+}
+/* 1страница */
+#containerOne {
+  background-image: url("background.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.containerOneName {
+  color: white;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.sriftNavbarHeader {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.sriftNavbar {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.sriftNavbar:hover {
+  border-bottom: 2px solid #ffffff;
+}
+.family {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 91px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+.familyText {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 68px;
+  color: #ffffff;
+  text-align: center;
+}
+.more {
+  display: block;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  letter-spacing: 0;
+  line-height: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  font-family: "Source Sans", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.more:hover {
+  color: #c8c8c8;
+  border: 1px solid #c8c8c8;
+}
+
+/* 2 страница */
+
+#containerTwo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.aboutMeDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.aboutMe {
+  text-align: center;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 91px;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  border-bottom: 3px solid #d2cfcf;
+  width: 300px;
+}
+
+.aboutBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.boxOne {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.boxTwo {
+  width: 50%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.imgAmI {
+  width: 70%;
+  height: auto;
+}
+
+.boxOneAbout {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 40px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.icons {
+  color: #357c3c;
+  font-weight: bold;
+}
+
+.boxThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.fab {
+  font-size: 60px;
+  color: #357c3c;
+  margin-bottom: 0px;
+}
+.boxThree span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  width: 165px;
+}
+
+/* 3 страница */
+
+#containerThree {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.projects-wrap {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+.project:hover {
+  box-shadow: 1rem 1rem 1rem #777;
+}
+.project-text {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: -10rem;
+  z-index: 10;
+  transition: top 0.3s;
+}
+.project:hover .project-text {
+  top: 2rem;
+  transition: top 0.3s 0.3s;
+}
+.project-name {
+  font-size: 25px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Source Sans 3", sans-serif;
+}
+.project-technologies {
+  font-size: 20px;
+  color: #000;
+  font-family: "Source Sans 3", sans-serif;
+}
+.project-img {
+  width: 27rem;
+  transition: opacity 0.3s;
+}
+.project:hover .project-img {
+  opacity: 0.2;
+}
+.project-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  padding: 7px;
+  background-color: none;
+  font-family: "Source Sans 3", sans-serif;
+  position: absolute;
+  bottom: -5rem;
+  transition: bottom 0.3s;
+  border-radius: 5px;
+  border: 2px solid #000000;
+}
+
+.project-link:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+.project:hover .project-link {
+  bottom: 2rem;
+  transition: bottom 0.3s 0.3s;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+/* 4страница */
+
+#containerFour {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+form {
+  margin-top: 2rem;
+}
+
+.massege {
+  display: flex;
+  justify-content: center;
+}
+
+.text-input {
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  outline: none !important;
+  width: 40rem;
+  margin: 1rem;
+}
+
+.mail {
+  height: 3rem;
+}
+
+.text {
+  height: 7rem;
+}
+
+.btnSend {
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  width: 20rem;
+  font-size: 20px;
+}
+
+.myContact {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.contact {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact:hover {
+  color: #ffffff;
+}
+
+.contactText {
+  padding: 20px;
+  margin-left: 7rem;
+}
+.contactText:hover {
+  background: linear-gradient(to left, #548cff, #9ad0ec);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.icon {
+  margin: 10px;
+  background: linear-gradient(to left, #548cff, #9ad0ec);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  font-size: 15px;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  position: sticky;
+  top: 90%;
+}
+
+.footer p,
+.far {
+  margin: 0 0.25em;
+  color: #fdf8f5;
+}
+
+@media all and (max-width: 1024px) {
+  .contactText {
+    padding: 5px;
+    margin: 5px;
+  }
+  .family {
+    font-size: 50px;
+  }
+  
+  .familyText {
+    font-size: 40px;
+  }
+
+  .aboutMe {
+    font-size: 40px;
+    width: 300px;
+  }
+  
+  .aboutBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .boxOne {
+    align-self: center;
+    width: 90%;
+
+  }
+
+  .imgAmI {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .boxTwo {
+    width: 100%;  
+  }
+
+  
+#containerTwo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.boxOneAbout {
+  font-size: 22px;
+  margin: 10px;
+}
+.boxThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+.fab {
+  font-size: 40px;
+  color: #357c3c;
+  margin-bottom: 0px;
+}
+.boxThree span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  width: 16%;
+}
+
+.aboutMeDiv {
+  margin-top: 30px;
+}
+  
+}
+@media all and (max-width: 800px) {
+  .family {
+    font-size: 50px;
+  }
+  
+  .familyText {
+    font-size: 40px;
+  }
+
+  .aboutMe {
+    font-size: 40px;
+    width: 300px;
+  }
+  
+  .aboutBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .boxOne {
+    align-self: center;
+    width: 90%;
+
+  }
+
+  .imgAmI {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .boxTwo {
+    width: 100%;  
+  }
+
+  
+#containerTwo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.boxOneAbout {
+  font-size: 22px;
+  margin: 10px;
+}
+.boxThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+.fab {
+  font-size: 40px;
+  color: #357c3c;
+  margin-bottom: 0px;
+}
+.boxThree span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  width: 16%;
+}
+
+.aboutMeDiv {
+  margin-top: 30px;
+}
+}
+
+@media all and (max-width: 500px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  .family {
+    font-size: 40px;
+  }
+  
+  .familyText {
+    font-size: 30px;
+  }
+
+  .aboutMe {
+    font-size: 30px;
+    width: 250px;
+    height: 80px;
+  }
+  
+  .aboutBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .boxOne {
+    align-self: center;
+    width: 90%;
+  }
+
+  .imgAmI {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .boxTwo {
+    width: 100%;  
+  }
+#containerTwo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.boxOneAbout {
+  font-size: 17px;
+  line-height: 30px;
+  padding: 0px;
+}
+
+.boxThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15px 0 15px;
+}
+.fab {
+  font-size: 60px;
+  color: #357c3c;
+  margin-bottom: 0px;
+}
+.boxThree span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.aboutMeDiv {
+  margin-top: 20px;
+}
+
+#containerFour {
+  width: 100%;
+  height: auto;
+}
+
+
+.text-input {
+  width: 20rem;
+  margin: 1rem;
+}
+
+
+.btnSend {
+  width: 15rem;
+  font-size: 18px;
+}
+
+.myContact {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.contact {
+  font-size: 15px;
+}
+
+
+.contactText {
+  padding: 5px;
+  margin: 5px;
+}
+
+.icon {
+  margin: 10px;
+}
+
+}
