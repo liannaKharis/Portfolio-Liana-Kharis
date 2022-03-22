@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".ggg", {
     scrollTrigger: {
         trigger: ".ggg",
-        start: "top center",
+        start: "top bottom",
        
       },
         y: -100,
