@@ -137,8 +137,9 @@ body {
 }
 
 .imgAmI {
-  width: 70%;
+  width: 43%;
   height: auto;
+  margin-left: 3rem;
 }
 
 .boxOneAbout {
